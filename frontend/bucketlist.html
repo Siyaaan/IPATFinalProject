@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Travel Bucket List | My Bucket List</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-protected="true">
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<a class="brand" href="dashboard.html">Travel Bucket List</a>
+			<nav class="site-nav">
+				<a href="dashboard.html">Home</a>
+				<a href="browse.html">Browse</a>
+				<a class="active" href="bucketlist.html">My Bucket List</a>
+				<a href="login.html">Login</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container page-main">
+		<section class="section-head">
+			<h1>My bucket list</h1>
+			<p>Track status, manage notes, and update destination details.</p>
+		</section>
+
+		<section class="toolbar">
+			<select id="statusFilter" aria-label="Filter by status">
+				<option value="">All statuses</option>
+				<option value="want_to_go">Want to go</option>
+				<option value="planned">Planned</option>
+				<option value="visited">Visited</option>
+			</select>
+			<button id="clearVisitedBtn" class="btn btn-secondary" type="button">Clear visited</button>
+		</section>
+		<p id="bucketLoading" class="subtitle" aria-live="polite"></p>
+		<p id="bucketMessage" class="subtitle"></p>
+
+		<section class="list-table-wrap">
+			<table class="list-table">
+				<thead>
+					<tr>
+						<th>Country</th>
+						<th>Status</th>
+						<th>Notes</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody id="bucketTableBody"></tbody>
+			</table>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>Keep your travel goals in motion.</p>
+		</div>
+	</footer>
+	<script src="js/nav.js" defer></script>
+	<script src="js/bucketlist.js" defer></script>
+</body>
+</html>

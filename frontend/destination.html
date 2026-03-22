@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Travel Bucket List | Destination Detail</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-protected="true">
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<a class="brand" href="dashboard.html">Travel Bucket List</a>
+			<nav class="site-nav">
+				<a href="dashboard.html">Home</a>
+				<a href="browse.html">Browse</a>
+				<a href="bucketlist.html">My Bucket List</a>
+				<a href="login.html">Login</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container page-main">
+		<section class="section-head">
+			<h1>Country detail</h1>
+			<p>View country info and update your destination notes/status.</p>
+		</section>
+
+		<p id="detailLoading" class="subtitle" aria-live="polite"></p>
+		<p id="detailMessage" class="subtitle"></p>
+
+		<section id="countryDetailCard" class="destination-card detail-layout"></section>
+
+		<section class="auth-card detail-form-card">
+			<h2>Update destination</h2>
+			<form id="destinationForm" class="form-grid" novalidate>
+				<label for="statusInput">Status</label>
+				<select id="statusInput" required>
+					<option value="want_to_go">Want to go</option>
+					<option value="planned">Planned</option>
+					<option value="visited">Visited</option>
+				</select>
+
+				<label for="notesInput">Notes</label>
+				<textarea id="notesInput" rows="4" placeholder="Add your travel notes..."></textarea>
+
+				<div class="card-actions">
+					<button type="submit" class="btn btn-primary">Save changes</button>
+					<button type="button" id="markVisitedBtn" class="btn btn-secondary">Mark as visited</button>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>Track every country on your journey.</p>
+		</div>
+	</footer>
+	<script src="js/nav.js" defer></script>
+	<script src="js/destination.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Travel Bucket List | Browse</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-protected="true">
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<a class="brand" href="dashboard.html">Travel Bucket List</a>
+			<nav class="site-nav">
+				<a href="dashboard.html">Home</a>
+				<a class="active" href="browse.html">Browse</a>
+				<a href="bucketlist.html">My Bucket List</a>
+				<a href="login.html">Login</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container page-main">
+		<section class="section-head">
+			<h1>Browse countries</h1>
+			<p>Discover countries from REST Countries API and add them to your bucket list.</p>
+		</section>
+
+		<section class="toolbar">
+			<input id="searchInput" type="text" placeholder="Search country by name..." aria-label="Search countries" />
+			<select id="regionFilter" aria-label="Filter by region">
+				<option value="">All regions</option>
+				<option value="Africa">Africa</option>
+				<option value="Americas">Americas</option>
+				<option>Asia</option>
+				<option>Europe</option>
+				<option>Oceania</option>
+			</select>
+		</section>
+
+		<p id="browseLoading" class="subtitle" aria-live="polite"></p>
+		<p id="browseMessage" class="subtitle"></p>
+		<section id="destinationsGrid" class="card-grid"></section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>Find places worth remembering.</p>
+		</div>
+	</footer>
+	<script src="js/nav.js" defer></script>
+	<script src="js/browse.js" defer></script>
+</body>
+</html>

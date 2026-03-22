@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Travel Bucket List | Dashboard</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-protected="true">
+	<header class="site-header">
+		<div class="container nav-wrap">
+			<a class="brand" href="dashboard.html">Travel Bucket List</a>
+			<nav class="site-nav">
+				<a class="active" href="dashboard.html">Home</a>
+				<a href="browse.html">Browse</a>
+				<a href="bucketlist.html">My Bucket List</a>
+				<a href="login.html">Login</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container page-main">
+		<section class="hero">
+			<h1>Your next destination starts here</h1>
+			<p>Build your personalized travel bucket list, track progress, and stay inspired.</p>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="browse.html">Explore Destinations</a>
+				<a class="btn btn-secondary" href="bucketlist.html">View My List</a>
+			</div>
+		</section>
+
+		<section class="stats-grid">
+			<article class="stat-card">
+				<h2 id="savedCount">0</h2>
+				<p>Destinations saved</p>
+			</article>
+			<article class="stat-card">
+				<h2 id="visitedCount">0</h2>
+				<p>Countries visited</p>
+			</article>
+			<article class="stat-card">
+				<h2 id="wantToGoCount">0</h2>
+				<p>Want to go</p>
+			</article>
+			<article class="stat-card">
+				<h2 id="plannedCount">0</h2>
+				<p>Planned</p>
+			</article>
+		</section>
+
+		<section>
+			<h3>Recently added destinations</h3>
+			<p id="dashboardMessage" class="subtitle"></p>
+			<div id="recentList" class="card-grid"></div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>Travel Bucket List</p>
+		</div>
+	</footer>
+	<script src="js/nav.js" defer></script>
+	<script src="js/dashboard.js" defer></script>
+</body>
+</html>

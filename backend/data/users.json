@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1774012752405",
+    "name": "sean",
+    "email": "seanortegapulga13@gmail.com",
+    "passwordHash": "$2b$10$9wZ0aqR3aYtr7cP6aM6oGuS8nNHAt406tCLmOpIMrVBeYgfOexx6e",
+    "bucketList": [
+      {
+        "destinationId": "paris-fr",
+        "targetDate": "",
+        "status": "Planned",
+        "addedAt": "2026-03-20T13:19:19.737Z"
+      },
+      {
+        "destinationId": "bali-id",
+        "targetDate": "",
+        "status": "Planned",
+        "addedAt": "2026-03-20T13:19:23.757Z"
+      },
+      {
+        "destinationId": "banff-ca",
+        "targetDate": "",
+        "status": "Planned",
+        "addedAt": "2026-03-20T13:19:25.260Z"
+      }
+    ]
+  },
+  {
+    "id": 1774013958191,
+    "name": "API Test",
+    "email": "apitest486457480@mail.com",
+    "password": "$2b$10$xXPRFoQxWniPPr29FHM1pOBCuizruQpYnSZWb.Un05XBUdN8wTak2",
+    "created_at": "2026-03-20T13:39:18.191Z"
+  }
+]
