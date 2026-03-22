@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": 1774159489023,
+    "name": "joel",
+    "email": "junpath12345@gmail.com",
+    "password": "$2b$10$cGrpmx6n5xeIT/VNkskl3.1D0vG5U7cZofieHUw.zNqvVmRaf2Rwu",
+    "created_at": "2026-03-22T06:04:49.023Z"
+  },
+  {
+    "id": 1774160245726,
+    "name": "joel",
+    "email": "seanortegapulga13@gmail.com",
+    "password": "$2b$10$Sm65yZwk2afKNQiKnukADu5C7plZHJ9C6mo/AQff3k5nUjgLV3yDi",
+    "created_at": "2026-03-22T06:17:25.726Z"
+  }
+]

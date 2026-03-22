@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": 1774159646477,
+    "user_id": 1774159489023,
+    "country_name": "Georgia",
+    "country_code": "GE",
+    "status": "want_to_go",
+    "notes": "",
+    "date_visited": null,
+    "created_at": "2026-03-22T06:07:26.477Z"
+  },
+  {
+    "id": 1774159729086,
+    "user_id": 1774159489023,
+    "country_name": "Cook Islands",
+    "country_code": "CK",
+    "status": "visited",
+    "notes": "hii",
+    "date_visited": "2026-03-22T06:19:57.674Z",
+    "created_at": "2026-03-22T06:08:49.086Z"
+  }
+]
