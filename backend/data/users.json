@@ -38,5 +38,12 @@
     "email": "test@example.com",
     "password": "$2b$10$mUsa8H6E5pLWNaRNxdERf.y8Tv1jS/PG67DhQAL4ZlwVrqyHf0H6q",
     "created_at": "2026-03-22T03:09:17.770Z"
+  },
+  {
+    "id": 1774157425185,
+    "name": "joel",
+    "email": "junpath12345@gmail.com",
+    "password": "$2b$10$EodoQ17xFMnYaI78KTwjg.uB0yGbZkUJW5kjKeotSDsfcB/kRowO.",
+    "created_at": "2026-03-22T05:30:25.185Z"
   }
 ]
