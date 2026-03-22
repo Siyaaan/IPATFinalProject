@@ -376,21 +376,325 @@ body {
 	text-align: center;
 }
 
-@media (max-width: 700px) {
+/* Tablet & Smaller Devices */
+@media (max-width: 1024px) {
+	.container {
+		width: 95%;
+	}
+
+	.stats-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.card-grid {
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	}
+}
+
+/* Small Tablets & Large Mobile */
+@media (max-width: 768px) {
+	.page-main {
+		padding: 24px 0;
+	}
+
 	.hero {
-		padding: 22px;
+		padding: 24px;
+		margin-bottom: 20px;
 	}
 
 	.hero h1 {
-		font-size: 1.55rem;
+		font-size: 1.75rem;
 	}
 
-	.toolbar input {
+	.nav-wrap {
+		padding: 12px 0;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.site-nav {
+		gap: 10px;
+		font-size: 0.95rem;
+	}
+
+	.site-nav a {
+		padding: 6px 8px;
+	}
+
+	.toolbar {
+		flex-direction: column;
+	}
+
+	.toolbar input,
+	.toolbar select {
+		width: 100%;
 		min-width: 100%;
+	}
+
+	.stats-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.list-table {
+		font-size: 0.9rem;
+	}
+
+	.list-table th,
+	.list-table td {
+		padding: 10px 8px;
+	}
+
+	.country-flag-small {
+		width: 32px;
+		height: 22px;
 	}
 
 	.detail-header {
 		flex-direction: column;
 		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.detail-header .country-flag {
+		width: 100px;
+		height: 67px;
+	}
+
+	.auth-card {
+		max-width: 100%;
+		margin: 12px auto;
+		padding: 20px;
+	}
+
+	.detail-form-card {
+		padding: 20px;
+	}
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+	.container {
+		width: 96%;
+	}
+
+	.page-main {
+		padding: 16px 0;
+	}
+
+	.hero {
+		padding: 18px;
+		margin-bottom: 16px;
+	}
+
+	.hero h1 {
+		font-size: 1.4rem;
+	}
+
+	.hero p {
+		font-size: 0.95rem;
+	}
+
+	.btn {
+		padding: 10px 14px;
+		font-size: 0.95rem;
+	}
+
+	.btn-small {
+		padding: 6px 10px;
+		font-size: 0.85rem;
+	}
+
+	.brand {
+		font-size: 1rem;
+	}
+
+	.site-nav {
+		gap: 8px;
+		font-size: 0.9rem;
+	}
+
+	.site-nav a {
+		padding: 4px 6px;
+	}
+
+	.toolbar {
+		flex-direction: column;
+		gap: 10px;
+		margin-bottom: 12px;
+	}
+
+	.toolbar input,
+	.toolbar select {
+		width: 100%;
+		padding: 8px 10px;
+		font-size: 0.9rem;
+	}
+
+	.stat-card {
+		padding: 16px;
+	}
+
+	.stat-card h2 {
+		font-size: 1.75rem;
+	}
+
+	.stat-card p {
+		font-size: 0.85rem;
+	}
+
+	.card-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.destination-card {
+		padding: 14px;
+	}
+
+	.destination-card h3 {
+		font-size: 1.1rem;
+		margin: 8px 0 4px;
+	}
+
+	.destination-card p {
+		font-size: 0.9rem;
+		margin: 4px 0;
+	}
+
+	.country-flag {
+		height: 100px;
+		margin-bottom: 8px;
+	}
+
+	/* Mobile table optimization */
+	.list-table-wrap {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.list-table {
+		font-size: 0.85rem;
+		min-width: 320px;
+	}
+
+	.list-table th,
+	.list-table td {
+		padding: 8px 6px;
+	}
+
+	.list-table th {
+		font-size: 0.8rem;
+	}
+
+	.country-flag-small {
+		width: 28px;
+		height: 20px;
+	}
+
+	.country-row {
+		gap: 6px;
+	}
+
+	.card-actions {
+		gap: 6px;
+		flex-direction: column;
+	}
+
+	.card-actions .btn {
+		width: 100%;
+		text-align: center;
+	}
+
+	.auth-card {
+		max-width: 100%;
+		margin: 8px auto;
+		padding: 16px;
+	}
+
+	.auth-card h1 {
+		font-size: 1.3rem;
+	}
+
+	.form-grid {
+		gap: 8px;
+	}
+
+	.form-grid input,
+	.form-grid select,
+	.form-grid textarea {
+		padding: 8px 10px;
+		font-size: 0.95rem;
+	}
+
+	.detail-layout {
+		padding: 12px;
+		margin-bottom: 12px;
+	}
+
+	.detail-header {
+		gap: 8px;
+	}
+
+	.detail-header .country-flag {
+		width: 80px;
+		height: 54px;
+	}
+
+	.detail-header h2 {
+		font-size: 1.3rem;
+		margin: 0;
+	}
+
+	.detail-header p {
+		font-size: 0.9rem;
+		margin: 4px 0 0;
+	}
+
+	.detail-list {
+		padding-left: 14px;
+		gap: 4px;
+		font-size: 0.9rem;
+	}
+
+	.detail-form-card {
+		padding: 16px;
+	}
+
+	.detail-form-card h2 {
+		font-size: 1.2rem;
+		margin-bottom: 12px;
+	}
+
+	.tag {
+		padding: 4px 8px;
+		font-size: 0.75rem;
+	}
+
+	.section-head h1 {
+		font-size: 1.4rem;
+	}
+
+	.tooltip {
+		font-size: 0.85rem;
+	}
+}
+
+/* Extra small phones (< 320px) */
+@media (max-width: 320px) {
+	.hero h1 {
+		font-size: 1.2rem;
+	}
+
+	.btn {
+		padding: 8px 10px;
+		font-size: 0.85rem;
+	}
+
+	.stat-card h2 {
+		font-size: 1.5rem;
+	}
+
+	.brand {
+		font-size: 0.9rem;
 	}
 }

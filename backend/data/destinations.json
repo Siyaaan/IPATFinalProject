@@ -8,5 +8,15 @@
     "notes": "Visit in spring",
     "date_visited": null,
     "created_at": "2026-03-20T13:39:18.307Z"
+  },
+  {
+    "id": 1774148957854,
+    "user_id": 1774148957770,
+    "country_name": "Japan",
+    "country_code": "JP",
+    "status": "want_to_go",
+    "notes": "Experience Japanese culture",
+    "date_visited": null,
+    "created_at": "2026-03-22T03:09:17.854Z"
   }
 ]
